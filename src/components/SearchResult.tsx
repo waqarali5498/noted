@@ -10,8 +10,8 @@ export default function SearchResult({
   return (
     <>
       {data
-        .filter((item) => item.name.includes(search))
-        .map((item) => (
+        .filter((item: any) => item.name.includes(search))
+        .map((item: any) => (
           <Card key={item.id} note={item} />
         ))}
     </>
